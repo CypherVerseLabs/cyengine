@@ -1,7 +1,7 @@
 <br/>
 <br/>
 <p align="center">
-    <img width="500" src="https://d27rt3a60hh1lx.cloudfront.net/cypherverse/cypherverse.png" alt="logo" />
+    <img width="500" src="" alt="logo" />
 </p>
 <h3 align="center">
      cyengine
@@ -53,7 +53,7 @@ Cyengine is actively maintained by CypherVerseLabs, a YC-backed startup pioneeri
 You could set up the framework in your sleep. Just import the package
 
 ```bash
-yarn add cypherverse #or npm install cypherverse
+yarn add cyengine #or npm install cyengine
 ```
 
 and copy/paste 9 lines of code
@@ -70,7 +70,7 @@ function World() {
 }
 ```
 
-_this is the starting point for [this demo](https://cypherverse.io)_
+_this is the starting point for [this demo](https://cypherverse.space)_
 
 <br/>
 
