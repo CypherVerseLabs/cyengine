@@ -1,0 +1,39 @@
+{
+  "id": "a37875ef-f03a-400b-941c-65c4bf7430c1",
+  "name": "Wall",
+  "predecessor": "ac5855ff-d070-43a3-a29e-d18c66dbbac8",
+  "purpose": "exist. manifest the texture wall. fix scale. rename, reorder props, bug fixes. animate w/h, rename prop. copy texture on the fly. add ktx support.",
+  "schema": [
+    {
+      "name": "position",
+      "type": "position"
+    },
+    {
+      "name": "rotation",
+      "type": "rotation"
+    },
+    {
+      "name": "width",
+      "type": "number"
+    },
+    {
+      "name": "height",
+      "type": "number"
+    },
+    {
+      "name": "texture",
+      "type": "image"
+    },
+    {
+      "name": "tiled",
+      "type": "boolean"
+    },
+    {
+      "name": "tileSize",
+      "type": "number"
+    }
+  ],
+  "npm_dependencies": {
+    "react-spring": "9.1.2"
+  }
+}

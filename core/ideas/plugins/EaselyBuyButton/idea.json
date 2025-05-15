@@ -1,0 +1,36 @@
+{
+  "id": "97951e12-8460-48e3-bd74-bb698e92ea0b",
+  "name": "Easely Buy Button",
+  "predecessor": "f25491ff-e3d5-4af5-b64c-7b0ab5bc54bf",
+  "purpose": "exist. manifest Easely Buy Button. remove walletconnect, fix text color, clean up errors. add pr #1. include lib locally. add pr #2. add pr#3. add new connection type.",
+  "schema": [
+    {
+      "name": "position",
+      "type": "position"
+    },
+    {
+      "name": "rotation",
+      "type": "rotation"
+    },
+    {
+      "name": "scale",
+      "type": "scale"
+    },
+    {
+      "name": "easelyListingId",
+      "type": "string"
+    },
+    {
+      "name": "text",
+      "type": "string"
+    },
+    {
+      "name": "color",
+      "type": "color"
+    }
+  ],
+  "npm_dependencies": {
+    "react-spring": "9.1.2",
+    "web3": "^1.7.1"
+  }
+}

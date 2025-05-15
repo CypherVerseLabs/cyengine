@@ -1,0 +1,116 @@
+{
+  "name": "cyengine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Decentralized your reality",
+  "keywords": [
+    "react",
+    "spaces",
+    "webxr",
+    "environment",
+    "webvr",
+    "cypherverse",
+    "3d website",
+    "virtual reality",
+    "3d",
+    "three js"
+  ],
+  "license": "MIT",
+  "homepage": "https://cypherverse.space",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacesvr/spacesvr.git"
+  },
+  "author": {
+    "name": "cypherverse",
+
+    "email": "cypherverse@gmail.com",
+    "url": "https://cypherverse.space"
+  },
+  "main": "main.cjs.js",
+  "module": "main.js",
+  "types": "main.d.ts",
+  "scripts": {
+    "build": "rimraf dist && mkdir dist && rollup -c && yarn copy && tsc && yarn pack-dist",
+    "compile": "rimraf dist && mkdir dist && rollup -c && yarn copy",
+    "lint": "eslint . --ext .ts,.tsx",
+    "process-gltf": "./scripts/process-gltf.sh",
+    "eslint": "eslint --fix {src/src}/**/*.{ts,tsx}",
+    "copy": "copyfiles package.json readme.md LICENSE dist && json -I -f dist/package.json -e \"this.private=false; this.devDependencies=undefined; this.optionalDependencies=undefined; this.scripts=undefined; this.husky=undefined; this.prettier=undefined; this.jest=undefined; this['lint-staged']=undefined;\"",
+    "pack-dist": "cd dist && yarn pack && mv *.tgz .. && cd ..",
+    "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,md}'",
+    "dev": "yarn --cwd ./src dev"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/*.{ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "files": [
+    "**"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@geckos.io/snapshot-interpolation": "^1.1.0",
+    "@react-spring/three": "^9.7.5",
+    "@react-spring/web": "^9.7.5",
+    "@react-three/cannon": "6.4.0",
+    "@react-three/drei": "9.65.3",
+    "@react-three/fiber": "8.12.0",
+    "@react-three/flex": "^1.0.1",
+    "@react-three/xr": "5.4.1",
+    "culori": "^0.18.2",
+    "ethers": "^6.13.4",
+    "nipplejs": "0.8.1",
+    "peerjs": "^1.4.6",
+    "react-device-detect": "^1.13.1",
+    "react-error-boundary": "^3.1.4",
+    "three": "0.151.3"
+  },
+  "peerDependencies": {
+    "react": ">=18.1",
+    "react-dom": ">=18.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@types/node": "^14.0.13",
+    "@types/node-fetch": "^2.5.7",
+    "@types/peerjs": "^1.1.0",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.10",
+    "@types/three": "0.150.1",
+    "@typescript-eslint/eslint-plugin": "^3.2.0",
+    "@typescript-eslint/parser": "^3.2.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "copyfiles": "^2.4.1",
+    "eslint": "^7.2.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "husky": "^4.2.5",
+    "json": "^10.0.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "2.0.5",
+    "pretty-quick": "^3.1.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.33.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^4.2.4"
+  }
+}

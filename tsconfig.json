@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable"],
+    "declaration": true,
+    "allowJs": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitThis": false,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "strictPropertyInitialization": false,
+    "emitDeclarationOnly": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": "./core",
+    "outDir": "dist",
+    "removeComments": true,
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "exclude": ["node_modules/**/*"],
+  "include": ["./core/**/*", "examples/worlds/NoCode.tsx"]
+}
