@@ -46,7 +46,7 @@ Cyengine is actively maintained by CypherVerseLabs, a YC-backed startup pioneeri
 
 - [Visit the codesandbox](https://codesandbox.io/s/e9w29) to instantly play with the package
 - [Clone the starter repo](https://github.com/cypherverse/cypherverse-starter) to start using with Next.js
-- [Sign up for muse](https://www.muse.place?utm_source=npmjs&utm_campaign=no_code) to build using our no-code editor
+- [Sign up for Cypherverse](https://www.cypherverse.space) to build using our no-code editor
 
 ## Develop
 
