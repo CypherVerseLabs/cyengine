@@ -7,7 +7,7 @@
      cyengine
 </h3>
 <h5 align="center">
-     About
+     
 The core engine powering the Cypherverse — a WebXR-first 3D framework built with React and Three.js.
 </h5>
 
