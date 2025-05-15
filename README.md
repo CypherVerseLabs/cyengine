@@ -4,10 +4,11 @@
     <img width="500" src="https://d27rt3a60hh1lx.cloudfront.net/cypherverse/cypherverse.png" alt="logo" />
 </p>
 <h3 align="center">
-     cypherverse
+     cyengine
 </h3>
 <h5 align="center">
-     A Cypherized reality for the future of the 3D Web.
+     About
+The core engine powering the Cypherverse — a WebXR-first 3D framework built with React and Three.js.
 </h5>
 
 <div align="center">
@@ -33,11 +34,13 @@
 
 ## About
 
-The mission of cypherverse is to organize and implement the Cyphers for experiencing 3D content on the web in the same way that there exists Cyphers for experiencing 2D content with HTML/CSS/JS.
+Cyengine is the standard for building immersive 3D experiences on the web — just as HTML, CSS, and JavaScript form the foundation for 2D content, Cyengine enables a seamless approach to 3D storytelling.
 
-cypherverse is designed to empower the artist. Instead of worrying about file structures or basic functionality like cross-device compatability, artists should spend their time telling their story. As such, consumption is optimized for simplicity, and the organization provides a framework to tell stories.
+Designed with creators in mind, Cyengine abstracts away the technical complexities of cross-device compatibility, file structure, and rendering setup. This allows developers and artists to focus on what matters most: crafting powerful, interactive narratives and virtual worlds.
 
-cypherverse is actively maintained by [Muse](https://www.muse.place?utm_source=npmjs&utm_campaign=learn_more), a YC-backed startup that provides tooling for visually building worlds. Muse's mission is to accelerate the adoption of 3D websites by increasing their accessibility, both for the end user and for the creator. Muse is completely built on cypherverse.
+Consumption is optimized for simplicity, and content creation is structured around storytelling. Whether you're building an immersive art piece, a social 3D space, or an interactive brand experience, Cyengine gives you the tools to bring it to life — fast.
+
+Cyengine is actively maintained by CypherVerseLabs, a YC-backed startup pioneering tools for visually building 3D websites and environments. CypherVerse itself is fully built on Cyengine, demonstrating its flexibility, performance, and creator-first philosophy.
 
 ## Quick Start
 
