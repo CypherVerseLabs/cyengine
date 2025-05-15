@@ -19,12 +19,10 @@
 </div>
 
 <p align="center">
-    <a href="https://muse.place?utm_source=npmjs">www.muse.place</a> · <a href="https://cypherverse.space/">demo</a> · <a href="https://discord.gg/nFHrmUbaz5">discord</a>
+    
 <p>
 <p align="center">
-<a href="https://muse.place?utm_source=npmjs&utm_campaign=logo">
-    <img width="50" src="https://d27rt3a60hh1lx.cloudfront.net/images/muselogogray.png" alt="logo" />
-</a>
+
 </p>
 
 <br/>
