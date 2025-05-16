@@ -4,8 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import { Text as TextImpl } from "troika-three-text";
 import { Triplet } from "@react-three/cannon";
 import { Idea } from "../../../../logic/basis";
-import { Button } from "../../../../ideas/ui/Button";
-import { FacePlayer } from "../../../../ideas/modifiers/FacePlayer";
+import { Button } from "../../Button";
+import { FacePlayer } from "../../../modifiers/FacePlayer";
 
 type DecisionProps = {
   decisions: Decision[];

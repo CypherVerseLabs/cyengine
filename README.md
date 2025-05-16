@@ -36,11 +36,7 @@ The core engine powering the Cypherverse — a WebXR-first 3D framework built wi
 
 Cyengine is the standard for building immersive 3D experiences on the web — just as HTML, CSS, and JavaScript form the foundation for 2D content, Cyengine enables a seamless approach to 3D storytelling.
 
-Designed with creators in mind, Cyengine abstracts away the technical complexities of cross-device compatibility, file structure, and rendering setup. This allows developers and artists to focus on what matters most: crafting powerful, interactive narratives and virtual worlds.
-
-Consumption is optimized for simplicity, and content creation is structured around storytelling. Whether you're building an immersive art piece, a social 3D space, or an interactive brand experience, Cyengine gives you the tools to bring it to life — fast.
-
-Cyengine is actively maintained by CypherVerseLabs, a YC-backed startup pioneering tools for visually building 3D websites and environments. CypherVerse itself is fully built on Cyengine, demonstrating its flexibility, performance, and creator-first philosophy.
+Designed with creators in mind, Cyengine abstracts away the technical complexities of cross-device compatibility, file structure, and rendering setup. This allows developers and creators to focus on what matters most: crafting powerful, interactive narratives and virtual worlds.
 
 ## Quick Start
 

@@ -11,7 +11,7 @@ import {
 import { getHudPos } from "../../../../logic/hud";
 import { QuaterionSpring } from "../logic/quat";
 import { config, useSpring } from "@react-spring/three";
-import { usePlayer } from "../../../../layers/Player/";
+import { usePlayer } from "../../../../layers/Player";
 
 type HUDProps = {
   children?: ReactNode | ReactNode[];

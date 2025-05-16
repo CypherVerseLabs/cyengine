@@ -1,5 +1,5 @@
 import { Peer } from "peerjs";
-import { Signaller } from "./";
+import { Signaller } from ".";
 
 const SESSION_ID = "cypherverse-local-signalling";
 const TIMEOUT_MIN = 1.25;

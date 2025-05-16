@@ -3,14 +3,15 @@ import { Text } from "@react-three/drei";
 import TalkieModel from "./components/TalkieModel";
 import MicAccess from "./components/MicAccess";
 import { Button } from "../../ideas";
-import { useToolbelt } from "../../layers/Toolbelt/";
+import { useToolbelt } from "../../layers/Toolbelt";
 import { useEnvironment } from "../../layers/Environment";
 import { useEffect, useState } from "react";
 
 const FONT_URL =
   "https://d27rt3a60hh1lx.cloudfront.net/fonts/Quicksand_Bold.otf";
 
-const WALKIE_TALKIE_TEXT = "Proximity voice chat is enabled in this world.\n\nWalk up to someone and say hello!";
+const WALKIE_TALKIE_TEXT =
+  "Proximity voice chat is enabled in this world.\n\nWalk up to someone and say hello!";
 
 export function WalkieTalkie() {
   const TOOL_NAME = "Walkie Talkie";
@@ -25,13 +26,16 @@ export function WalkieTalkie() {
 
   // Load font dynamically
   useEffect(() => {
-    const font = new FontFace('Quicksand', `url(${FONT_URL})`);
-    font.load().then(() => {
-      document.fonts.add(font);
-      setFontLoaded(true);
-    }).catch((error) => {
-      console.error("Failed to load font:", error);
-    });
+    const font = new FontFace("Quicksand", `url(${FONT_URL})`);
+    font
+      .load()
+      .then(() => {
+        document.fonts.add(font);
+        setFontLoaded(true);
+      })
+      .catch((error) => {
+        console.error("Failed to load font:", error);
+      });
   }, []);
 
   return (

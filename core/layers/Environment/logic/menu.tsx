@@ -1,4 +1,4 @@
-import { MenuItem, useEnvironment } from "../logic/environment";
+import { MenuItem, useEnvironment } from "./environment";
 import { useThree } from "@react-three/fiber";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { isMobile } from "react-device-detect";

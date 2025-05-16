@@ -2,14 +2,15 @@
   "name": "cyengine",
   "version": "1.0.0",
   "private": true,
-  "description": "A Decentralized your reality",
+  "description": "The core engine powering the Cypherverse — a WebXR-first 3D framework built with React and Three.js.",
   "keywords": [
     "react",
-    "spaces",
+    "typescript",
     "webxr",
     "environment",
+    "decentralized",
     "webvr",
-    "cypherverse",
+    "cyengine",
     "3d website",
     "virtual reality",
     "3d",
@@ -19,13 +20,12 @@
   "homepage": "https://cypherverse.space",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spacesvr/spacesvr.git"
+    "url": "git+https://github.com/CypherVerseLabs/cyengine.git"
   },
   "author": {
-    "name": "cypherverse",
-
+    "name": "CypherVerseLabs",
     "email": "cypherverse@gmail.com",
-    "url": "https://cypherverse.space"
+    "url": "https://github.com/CypherVerseLabs/cyengine"
   },
   "main": "main.cjs.js",
   "module": "main.js",

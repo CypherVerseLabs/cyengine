@@ -1,5 +1,5 @@
 import { Peer } from "peerjs";
-import { Signaller, SignallerConfig } from "./";
+import { Signaller, SignallerConfig } from ".";
 
 type BackendSessionData = {
   session_id: string;
