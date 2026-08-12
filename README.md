@@ -1,36 +1,47 @@
 <br/>
 <br/>
+
 <p align="center">
-    <img width="500" src="https://d27rt3a60hh1lx.cloudfront.net/cyengine/cyengine.png" alt="logo" />
+    <img width="500" src="https://lbemedia.net/images/android-chrome-192x192.ico" alt="logo" />
 </p>
+
 <h3 align="center">
-     cyengine
+    cyengine
 </h3>
+
 <h5 align="center">
-     A standardized reality for the future of the 3D Web.
+    A standardized reality for the future of the 3D Web.
 </h5>
 
 <div align="center">
 
-[![Version](https://img.shields.io/npm/v/cyengine?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@react-three/drei)
-[![Downloads](https://img.shields.io/npm/dt/cyengine.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@react-three/drei)
-[![Discord Shield](https://img.shields.io/discord/610733384804859934?style=flat&colorA=000000&colorB=000000&label=discord&logo=discord&logoColor=ffffff)](https://discord.gg/nFHrmUbaz5)
+[![Version](https://img.shields.io/npm/v/cyengine?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/cyengine)
+
+[![Downloads](https://img.shields.io/npm/dt/cyengine.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/cyengine)
+
+[![Discord Shield](https://img.shields.io/discord/610733384804859934?style=flat&colorA=000000&colorB=000000&label=discord&logo=discord&logoColor=ffffff)](https://discord.gg/CrbfwhVVq)
 
 </div>
 
 <p align="center">
-    <a href="https://muse.place?utm_source=npmjs">www.cypherverse.space</a> · <a href="https://cyengine.io/">demo</a> · <a href="https://discord.gg/nFHrmUbaz5">discord</a>
-<p>
+    <a href="https://cypherverse.space">www.cypherverse.space</a>
+    ·
+    <a href="https://cyengine-starter-pi.vercel.app">demo</a>
+    ·
+    <a href="https://discord.gg/CrbfwhVVq">discord</a>
+</p>
+
 <p align="center">
-<a href="https://muse.place?utm_source=npmjs&utm_campaign=logo">
-    <img width="50" src="https://d27rt3a60hh1lx.cloudfront.net/images/muselogogray.png" alt="logo" />
-</a>
+    <a href="https://lbemedia.net/images/android-chrome-192x192.ico">
+        <img width="50" src="https://lbemedia.net/images/android-chrome-192x192.ico" alt="logo" />
+    </a>
 </p>
 
 <br/>
 <br/>
 <br/>
 <br/>
+
 <hr/>
 
 ## About
@@ -39,13 +50,13 @@ The mission of cyengine is to organize and implement the standards for experienc
 
 cyengine is designed to empower the artist. Instead of worrying about file structures or basic functionality like cross-device compatability, artists should spend their time telling their story. As such, consumption is optimized for simplicity, and the organization provides a framework to tell stories.
 
-cyengine is actively maintained by [cypherverse](https://www.muse.place?utm_source=npmjs&utm_campaign=learn_more), a YC-backed startup that provides tooling for visually building worlds. cypherverse's mission is to accelerate the adoption of 3D websites by increasing their accessibility, both for the end user and for the creator. cypherverse is completely built on cyengine.
+cyengine is actively maintained by [cypherverse](https://github.com/CypherVerseLabs/cyengine), a YC-backed startup that provides tooling for visually building worlds. cypherverse's mission is to accelerate the adoption of 3D websites by increasing their accessibility, both for the end user and for the creator. cypherverse is completely built on cyengine.
 
 ## Quick Start
 
-- [Visit the codesandbox](https://codesandbox.io/s/e9w29) to instantly play with the package
+
 - [Clone the starter repo](https://github.com/cyengine/cyengine-starter) to start using with Next.js
-- [Sign up for cypherverse](https://www.muse.place?utm_source=npmjs&utm_campaign=no_code) to build using our no-code editor
+- [Sign up for cypherverse](https://cypherverse.space) to build using our no-code editor
 
 ## Develop
 
@@ -69,7 +80,7 @@ function World() {
 }
 ```
 
-_this is the starting point for [this demo](https://cyengine.io)_
+_this is the starting point for [this demo](https://cypherverse.space)_
 
 <br/>
 
