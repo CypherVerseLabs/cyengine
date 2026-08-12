@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable"],
+    "declaration": true,
+    "allowJs": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitThis": false,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "strictPropertyInitialization": false,
+    "emitDeclarationOnly": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "removeComments": true
+  },
+  "exclude": ["node_modules/**/*"],
+  "include": ["./src/**/*"]
+}

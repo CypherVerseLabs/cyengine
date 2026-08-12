@@ -1,0 +1,25 @@
+{
+  "name": "cyengine-examples",
+  "version": "2.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev-ssl": "HTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.3.4",
+    "posthog-js": "^1.33.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.19.34",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "@types/three": "0.150.1",
+    "typescript": "5.4.5"
+  }
+}
