@@ -1,6 +1,6 @@
 {
   "name": "cyengine",
-  "version": "2.0.7",
+  "version": "2.1.0",
   "private": false,
   "description": "A standardized reality for future of the 3D Web",
   "keywords": [
@@ -21,11 +21,9 @@
     "name": "mac tohbala",
     "email": "mactohbala@gmail.com"
   },
-
   "main": "dist/main.cjs.js",
   "module": "dist/main.js",
   "types": "dist/main.d.ts",
-
   "scripts": {
     "build": "rimraf dist && rollup -c && tsc",
     "lint": "eslint . --ext .ts,.tsx",
@@ -33,25 +31,21 @@
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,md}'",
     "dev": "yarn --cwd ./examples dev"
   },
-
   "files": [
     "dist",
     "README.md",
     "LICENSE"
   ],
-
   "resolutions": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7"
   },
-
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
-
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
@@ -68,7 +62,6 @@
     "react-error-boundary": "^3.1.4",
     "three": "0.151.3"
   },
-
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/plugin-transform-runtime": "^7.12.1",
