@@ -179,13 +179,16 @@ _Provides a user-controlled entity with a standardized set of controls that work
 
 ```tsx
 type PlayerProps = {
+  height?: number; // player height in meters, default 1.6
   pos?: number[]; // initial player position
   rot?: number; // initial player rotation (radians along Y axis)
   speed?: number; // player movement speed
+  flying?: boolean; // allow flying movement
   controls?: {
     disableGyro?: boolean; // used to disable gyroscope prompt on mobile
   };
 };
+
 ```
 
 ```tsx

@@ -7,6 +7,9 @@ export default function Hub() {
   return (
     <StandardReality
       environmentProps={{ dev: process.env.NODE_ENV === "development" }}
+        playerProps={{
+    height: 1.5,
+  }}
     >
       <Analytics />
       <LostWorld />

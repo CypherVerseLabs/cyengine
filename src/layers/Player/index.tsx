@@ -45,10 +45,11 @@ type PlayerState = {
 export const PlayerContext = createContext({} as PlayerState);
 export const usePlayer = () => useContext(PlayerContext);
 
-const SPEED = 3.6; // (m/s) 1.4 walking, 2.6 jogging, 4.1 running
+const SPEED = 3.6;
 const SHOW_PLAYER_HITBOX = false;
 
 export type PlayerProps = {
+  height?: number;
   pos?: number[];
   rot?: number;
   speed?: number;
@@ -62,17 +63,11 @@ type PlayerLayer = {
   children: ReactNode[] | ReactNode;
 } & PlayerProps;
 
-/**
- * Player represents a user controlled entity, complete with a
- * control scheme and a physical representation that interacts with other physics-
- * enabled objects.
- *
- * @constructor
- */
 export function Player(props: PlayerLayer) {
   const {
     children,
-    pos = [0, 1, 0],
+    height = 1.6,
+    pos = [0, 0, 0],
     rot = 0,
     flying = false,
     speed = SPEED,
@@ -86,27 +81,29 @@ export function Player(props: PlayerLayer) {
 
   const { device } = useEnvironment();
 
-  // local state
   const initPos = useRef(new Vector3().fromArray(pos));
   const position = useRef(new Vector3());
   const velocity = useRef(new Vector3());
   const lockControls = useRef(false);
+
   const raycaster = useMemo(
     () => new Raycaster(new Vector3(), new Vector3(), 0, 5),
     []
   );
 
-  // physical body
-  const [, bodyApi] = useCapsuleCollider(initPos);
+  // 1.6m tall player capsule
+  const [, bodyApi] = useCapsuleCollider(initPos, height);
+
   const { direction, updateVelocity } = useSpringVelocity(bodyApi, speed);
 
   const bob = useBob(velocity, direction);
 
-  // initial rotation
   useEffect(() => {
-    // rotation happens before position move
     camera.rotation.setFromQuaternion(
-      new Quaternion().setFromAxisAngle(new Vector3(0, 1, 0), rot)
+      new Quaternion().setFromAxisAngle(
+        new Vector3(0, 1, 0),
+        rot
+      )
     );
   }, []);
 
@@ -114,9 +111,11 @@ export function Player(props: PlayerLayer) {
     const unsubPos = bodyApi.position.subscribe((p) =>
       position.current.fromArray(p)
     );
+
     const unsubVel = bodyApi.velocity.subscribe((v) =>
       velocity.current.fromArray(v)
     );
+
     return () => {
       unsubPos();
       unsubVel();
@@ -124,13 +123,13 @@ export function Player(props: PlayerLayer) {
   }, [bodyApi, bodyApi.position, bodyApi.velocity]);
 
   useFrame(({ clock }) => {
-    // update raycaster on desktop (mobile uses default)
     if (device.desktop) {
       raycaster.ray.origin.copy(position.current);
       raycaster.ray.direction.set(0, 0, -1);
       raycaster.ray.direction.applyQuaternion(camera.quaternion);
     }
 
+    // Camera is positioned at the player's head/eye position.
     camera.position.copy(position.current);
 
     if (!lockControls.current) {
@@ -141,9 +140,10 @@ export function Player(props: PlayerLayer) {
 
   const setPosition = useCallback(
     (pos: Vector3) => {
-      // in case it gets called before bodyapi is initialized
       initPos.current.copy(pos);
+
       bodyApi.position.set(pos.x, pos.y, pos.z);
+
       position.current.copy(pos);
     },
     [bodyApi.position]
@@ -152,6 +152,7 @@ export function Player(props: PlayerLayer) {
   const setVelocity = useCallback(
     (vel: Vector3) => {
       bodyApi.velocity.set(vel.x, vel.y, vel.z);
+
       velocity.current.copy(vel);
     },
     [bodyApi.velocity]
@@ -177,22 +178,37 @@ export function Player(props: PlayerLayer) {
       {device.mobile && (
         <>
           {controls?.disableGyro && <TouchFPSCamera />}
+
           {!controls?.disableGyro && (
             <GyroControls fallback={<TouchFPSCamera />} />
           )}
+
           <NippleMovement direction={direction} />
         </>
       )}
+
       {device.desktop && (
         <>
-          <KeyboardMovement direction={direction} flying={flying} />
+          <KeyboardMovement
+            direction={direction}
+            flying={flying}
+          />
+
           <PointerLockControls />
         </>
       )}
+
       {device.xr && (
-        <VRControllerMovement position={position} direction={direction} />
+        <VRControllerMovement
+          position={position}
+          direction={direction}
+        />
       )}
-      {SHOW_PLAYER_HITBOX && <VisibleCapsuleCollider />}
+
+      {SHOW_PLAYER_HITBOX && (
+        <VisibleCapsuleCollider height={height} />
+      )}
+
       {children}
     </PlayerContext.Provider>
   );
