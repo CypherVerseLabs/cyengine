@@ -39,13 +39,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link
           rel="icon"
-          type="image/png"
+          type="image/ico"
           sizes="32x32"
           href="/favicon-32x32.ico"
         />
         <link
           rel="icon"
-          type="image/png"
+          type="image/ico"
           sizes="16x16"
           href="/favicon-16x16.ico"
         />
